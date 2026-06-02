@@ -14,6 +14,8 @@ body {
     flex-direction: column;
 }
 
+/* intro */
+
 .intro {
     display: flex;
     justify-content: center;
@@ -35,6 +37,7 @@ body {
     width: 40%;
     height: 400px;
     min-height: 180px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 .intro-img > h1 {
     font-family: "boy font";
@@ -48,6 +51,11 @@ body {
     width: 60%;
     padding-left: 20px;
     height: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.intro-text > h2 {
+    font-family: "boy font";
+    font-size: 40px;
 }
 .intro-socials {
     display: flex;
@@ -57,4 +65,55 @@ body {
 }
 .intro-icon {
     width: 40px;
+}
+
+/* projects */
+
+.work {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.work > h2 {
+    font-family: "boy font";
+    font-size: 50px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.project-card {
+    background-color: blueviolet;
+    color: antiquewhite;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project-img {
+    max-width: 350px;
+    max-height: 200px;
+}
+.project-desc {
+    width: 100%;
+}
+.project-header {
+    display: flex;
+    flex-direction: row;
+}
+.project-icon {
+    width: 30px;
+}
+.project-icon-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
 }
