@@ -158,16 +158,8 @@ footer {
     height: 300px;
 }
 
-
 /* Tablet */
-/* width = 768 */
 @media (max-width: 768px) {
-    body {
-        justify-content: flex-start;
-    }
-    html {
-        overflow-x: hidden;
-    }
     .intro {
         flex-direction: column;
         width: 100%;
@@ -216,5 +208,29 @@ footer {
 
 /* Mobile */
 @media (max-width: 425px) {
-    
+    .intro {
+        padding: 20px;
+    }
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 0;
+    }
+    .project-header > h3 {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .project-icon {
+        width: 20px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .footer-img {
+        display: block;
+        width: 100vw;
+        margin: 0;
+    }
 }
