@@ -98,6 +98,7 @@ body {
 .project-img {
     max-width: 350px;
     max-height: 200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 .project-desc {
     width: 100%;
@@ -116,4 +117,42 @@ body {
     align-items: center;
     margin-left: auto;
     gap: 10px;
+}
+
+/* footer */
+
+footer {
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+.phone, .email {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.contact-info > h2 {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.footer-img {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    min-width: 450px;
+    min-height: 250px;
 }
